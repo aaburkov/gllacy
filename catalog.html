@@ -7,7 +7,7 @@
 <body>
 	<header class="main-header">
 			<nav class="main-nav">
-				<a class="main-header__logo">
+				<a href="index.html" class="main-header__logo">
 					<img src="http://via.placeholder.com/154x64" alt="Логотип магазина мороженного Глэйси"
 					width="154" height="64">
 				</a>
@@ -17,7 +17,7 @@
 							<li>
 								<a href="#">Новинки</a>
 							</li>
-							<li">
+							<li>
 								<a href="#">Сливочное</a>
 							</li>
 							<li>
@@ -144,7 +144,7 @@
 				</div>
 			</section>
 			<div class="pagination">
-				<span class="pagination__control-prev"><</span>
+				<span class="pagination__control-prev">&lt;</span>
 				<ul class="pagination__list">
 					<li class="pagination__item pagination__item--current">1</li>
 					<li class="pagination__item">2</li>
@@ -152,7 +152,7 @@
 					<li class="pagination__item">4</li>
 					<li class="pagination__item">5</li>
 				</ul>
-				<span class="pagination__control-next">></span>
+				<span class="pagination__control-next">&gt;</span>
 			</div>
 	</main>	
 	<footer class="main-footer">
@@ -171,8 +171,28 @@
 			</div>
 			<div class="copyright">
 				<img src="http://via.placeholder.com/108x39" width="108" height="39" alt="Логотип HTML Academy">
-				<p>Сделано в <a href="htmlacademy.ru">HTML Academy</a>&#169; 2018</p>
+				<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&#169; 2018</p>
 			</div>
-		</footer>	
+		</footer>
+		<section class="modal modal-cart">
+			<table class="modal-cart__table">
+				<tr>
+					<td><span class="modal-cart__item__delete">X</span></td>
+					<td><img src="http://via.placeholder.com/33x33" alt="Пломбир с апельсиновым джемом"></td>
+					<td>Пломбир с апельсиновым джемом</td>
+					<td>1,5кг x <span>200 руб.</span></td>
+					<td>300 руб.</td>
+				</tr>
+				<tr>
+					<td><span class="modal-cart__delete">X</span></td>
+					<td><img src="http://via.placeholder.com/33x33" alt="Клубничный пломбир с присыпкой из белого шspanколада"></td>
+					<td>Клубничный пломбир с присыпкой из белого шspanколада</td>
+					<td>1,5кг x <span>300 руб.</span></td>
+					<td>450 руб.</td>
+				</tr>
+			</table>
+			<span class="modal-cart__total-price">Итого: 750 руб.</span>
+			<a class="btn modal-cart__btn" href="#">Оформить заказ</a>
+		</section>	
 </body>
 </html>
