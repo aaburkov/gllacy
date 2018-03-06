@@ -7,12 +7,12 @@
   <body>
 		<header class="main-header">
 			<nav class="main-nav">
-				<div class="main-header__logo">
-					<img src="http://via.placeholder.com/154x64" alt="Логотип магазина мороженного Глэйси"
+				<a class="main-header__logo-link">
+					<img class="main-header__logo" src="http://via.placeholder.com/154x64" alt="Логотип магазина мороженного Глэйси"
 					width="154" height="64">
-				</div>
+				</a>
 				<ul class="main-nav__site-nav site-nav">
-					<li>Каталог
+					<li><span>Каталог</span>
 						<ul class="site-nav__dropdown "><!-- Выпадающее окно каталога -->
 							<li>
 								<a href="#">Новинки</a>
@@ -32,10 +32,10 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#"> Доставка и Оплата</a>
+						<a class="main-nav__link" href="#"> Доставка и Оплата</a>
 					</li>
 					<li>
-						<a href="#"> О Компании</a>
+						<a class="main-nav__link" href="#"> О Компании</a>
 					</li>
 				</ul>
 				<ul class="main-nav__user-nav user__nav">
@@ -55,27 +55,31 @@
 				<p>С 10 до 20, ежедневно</p>
 				<span class="info__phone">8 812 450-25-25</span>
 			</div>
-			<!-- Слайдер -->
-			<ul class="page-slider">
-				<li class="slider-item">
-					<img src="http://via.placeholder.com/647x584" 
-					width="647" height="584" alt="Крем брюле и пломбир с малиновым джемом">
-					<p>Крем брюле и пломбир с малиновым джемом</p>										
-				</li>
-				<li class="slider-item">
-					<img src="http://via.placeholder.com/647x584" 
-					width="647" height="584" alt="Шоколадный пломбир и лимонный сорбет">
-					<p>Шоколадный пломбир и лимонный сорбет</p>					
-				</li>
-				<li class="slider-item">
-					<img src="http://via.placeholder.com/647x584" 
-					width="647" height="584" alt="Пломбир с помадкой и клубничный щербет">
-					<p>Пломбир с помадкой и клубничный щербет</p>
-				</li>
-			</ul>
-			<a class="btn page-slider__btn" href="#">Давайте оба!</a>
+			
+			
 		</header>
 	  <main class="page-main">
+	  	<!-- Слайдер -->
+	  	<div class="page-slider"> 
+				<ul class="page-slider__list">
+					<li class="page-slider__item">
+						<img src="http://via.placeholder.com/647x584" 
+						width="647" height="584" alt="Крем брюле и пломбир с малиновым джемом">
+						<p>Крем брюле и пломбир с малиновым джемом</p>			
+					</li>
+					<li class="page-slider__item">
+						<img src="http://via.placeholder.com/647x584" 
+						width="647" height="584" alt="Шоколадный пломбир и лимонный сорбет">
+						<p>Шоколадный пломбир и лимонный сорбет</p>		  
+					</li>
+					<li class="page-slider__item">
+						<img src="http://via.placeholder.com/647x584" 
+						width="647" height="584" alt="Пломбир с помадкой и клубничный щербет">
+						<p>Пломбир с помадкой и клубничный щербет</p>
+					</li>
+				</ul>
+				<a class="btn page-slider__btn" href="#">Давайте оба!</a>
+			</div>			
 	    	<h1 class="visually-hidden">Магазин мороженого "Глэйси"</h1>
 	    <section class="offer">
 	    	<h2 class="visually-hidden">Предложения</h2>
@@ -91,30 +95,46 @@
 	    	</div>
 	    </section>
 			<section class="catalog">
-				<div class="product">
+				<article class="product">
 					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+					<div class="catalog__info">
 					<strong class="product__price">310&#8381;</strong>
 					<span class="product__units">/Кг</span>
-					<p class="product__description"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
-				</div>
-				<div class="product">
+					<h1 class="product__name">
+						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+					</h1>
+					</div>
+				</article>
+				<article class="product">
 					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+					<div class="catalog__info">
 					<strong class="produsroduct__price">380&#8381;</strong>
 					<span class="product__units">/Кг</span>
-					<p class="product__description"><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
-				</div>
-				<div class="product">
+					<h1 class="product__name">
+						<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+					</h1>
+					</div>
+				</article>
+				<article class="product">
 					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+					<div class="catalog__info">
 					<strong class="produsroduct__price">355&#8381;</strong>
 					<span class="product__units">/Кг</span>
-					<p class="product__description"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
-				</div>
-				<div class="product">
+					<h1 class="product__name">
+						<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+					</h1>
+					</div>
+				</article>
+				<article class="product">
 					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+					<div class="catalog__info">
 					<strong class="produsroduct__price">415&#8381;</strong>
 					<span class="product__units">/Кг</span>
-					<p class="product__description"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
-				</div>
+					<h1 class="product__name">
+						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+					</h1>
+					</div>
+				</article>
 			</section>
 			<section class="features">
 				<h3 class="visually-hidden">Преимущества</h3>
@@ -126,19 +146,21 @@
 					<li class="features__item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
 				</ul>
 			</section>
-	    <section class="blog-preview">
-	    	<b class="blog-preview__title">Новое в нашем блоге</b>
-	    	<a class="blog-preview__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-	    </section>
-	    <section class="subscribe">
-	    	<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-	    	<!-- Место для формы -->
-	    </section>
-	    <figure class="map">
+			<div class="blog-and-subscribe">
+		    <article class="blog-preview">
+		    	<h1 class="blog-preview__title">Новое в нашем блоге</h1>
+		    	<a class="blog-preview__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+		    </article>
+		    <section class="subscribe">
+		    	<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+		    	<!-- Место для формы -->
+		    </section>
+			</div>
+	    <section class="map">
 				<img src="http://via.placeholder.com/1200x430" width="1200" height="430" alt="Карта. Как проехать?">
-			</figure>
+			</section>
 			<section class="info">
-				<div class="info_adress">
+				<div class="info___adress">
 					<p>Адресс главного офиса и офлайн-магазина:</p>
 					<strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
 				</div>
