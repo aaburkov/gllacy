@@ -5,37 +5,37 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-		<header class="main-header">
+  	<header class="main-header">
 			<nav class="main-nav">
 				<a class="main-header__logo-link">
-					<img class="main-header__logo" src="http://via.placeholder.com/154x64" alt="Логотип магазина мороженного Глэйси"
+					<img class="main-header__image" src="http://via.placeholder.com/154x64" alt="Логотип магазина мороженного Глэйси"
 					width="154" height="64">
 				</a>
 				<ul class="main-nav__site-nav site-nav">
 					<li><span>Каталог</span>
-						<ul class="site-nav__dropdown "><!-- Выпадающее окно каталога -->
+						<ul class="site-nav__dropdown dropdown"><!-- Выпадающее окно каталога -->
 							<li>
-								<a href="#">Новинки</a>
+								<a class="dropdown__link" href="#">Новинки</a>
 							</li>
 							<li>
-								<a href="catalog.html">Сливочное</a>
+								<a class="dropdown__link" href="catalog.html">Сливочное</a>
 							</li>
 							<li>
-								<a href="#">Щербеты</a>
+								<a class="dropdown__link" href="#">Щербеты</a>
 							</li>
 							<li>
-								<a href="#">Фруктовый лед</a>
+								<a class="dropdown__link" href="#">Фруктовый лед</a>
 							</li>
 							<li>
-								<a href="#">Мелорин</a>
+								<a class="dropdown__link" href="#">Мелорин</a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<a class="main-nav__link" href="#"> Доставка и Оплата</a>
+						<a class="site-nav__link" href="#"> Доставка и Оплата</a>
 					</li>
 					<li>
-						<a class="main-nav__link" href="#"> О Компании</a>
+						<a class="site-nav__link" href="#"> О Компании</a>
 					</li>
 				</ul>
 				<ul class="main-nav__user-nav user__nav">
@@ -52,28 +52,26 @@
 				</ul>
 			</nav>
 			<div class="main-heder__info info">
-				<p>С 10 до 20, ежедневно</p>
+				<span class="info__working-hours">С 10 до 20, ежедневно</span>
 				<span class="info__phone">8 812 450-25-25</span>
 			</div>
-			
-			
-		</header>
+		</header>	
 	  <main class="page-main">
 	  	<!-- Слайдер -->
 	  	<div class="page-slider"> 
 				<ul class="page-slider__list">
 					<li class="page-slider__item">
-						<img src="http://via.placeholder.com/647x584" 
+						<img class="page-slider__image" src="http://via.placeholder.com/647x584" 
 						width="647" height="584" alt="Крем брюле и пломбир с малиновым джемом">
 						<p>Крем брюле и пломбир с малиновым джемом</p>			
 					</li>
 					<li class="page-slider__item">
-						<img src="http://via.placeholder.com/647x584" 
+						<img class="page-slider__image" src="http://via.placeholder.com/647x584" 
 						width="647" height="584" alt="Шоколадный пломбир и лимонный сорбет">
 						<p>Шоколадный пломбир и лимонный сорбет</p>		  
 					</li>
 					<li class="page-slider__item">
-						<img src="http://via.placeholder.com/647x584" 
+						<img class="page-slider__image" src="http://via.placeholder.com/647x584" 
 						width="647" height="584" alt="Пломбир с помадкой и клубничный щербет">
 						<p>Пломбир с помадкой и клубничный щербет</p>
 					</li>
@@ -86,52 +84,52 @@
 	    	<div class="offer__item">
 	    		 <b class="offer-title">Малинка даром!</b>
 	    		 <p class="offer__description">При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-	    		<a class="btn" href="#">Хочу варенье!</a>
+	    		<a class="btn offer__btn" href="#">Хочу варенье!</a>
 	    	</div>
 	    	<div class="offer__item">
 	    		 <b class="offer-title">Шоколадки даром!</b>
 	    		 <p class="offer__description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно. </p>
-	    		<a class="btn" href="#">Хочу шоколадки!</a>
+	    		<a class="btn offer__btn" href="#">Хочу шоколадки!</a>
 	    	</div>
 	    </section>
 			<section class="catalog">
 				<article class="product">
-					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+					<img class="product__image" src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					<div class="catalog__info">
 					<strong class="product__price">310&#8381;</strong>
 					<span class="product__units">/Кг</span>
 					<h1 class="product__name">
-						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+						<a class="product__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 					</h1>
 					</div>
 				</article>
 				<article class="product">
-					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+					<img class="product__image" src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 					<div class="catalog__info">
 					<strong class="produsroduct__price">380&#8381;</strong>
 					<span class="product__units">/Кг</span>
 					<h1 class="product__name">
-						<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+						<a class="product__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
 					</h1>
 					</div>
 				</article>
 				<article class="product">
-					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+					<img class="product__image" src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 					<div class="catalog__info">
 					<strong class="produsroduct__price">355&#8381;</strong>
 					<span class="product__units">/Кг</span>
 					<h1 class="product__name">
-						<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+						<a class="product__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 					</h1>
 					</div>
 				</article>
 				<article class="product">
-					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+					<img class="product__image" src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 					<div class="catalog__info">
 					<strong class="produsroduct__price">415&#8381;</strong>
 					<span class="product__units">/Кг</span>
 					<h1 class="product__name">
-						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+						<a class="product__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 					</h1>
 					</div>
 				</article>
@@ -157,17 +155,17 @@
 		    </section>
 			</div>
 	    <section class="map">
-				<img src="http://via.placeholder.com/1200x430" width="1200" height="430" alt="Карта. Как проехать?">
+				<img class="map__image" src="http://via.placeholder.com/1200x430" width="1200" height="430" alt="Карта. Как проехать?">
 			</section>
 			<section class="info">
-				<div class="info___adress">
-					<p>Адресс главного офиса и офлайн-магазина:</p>
-					<strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
+				<div class="info__adress">
+					<p class="info__text">Адресс главного офиса и офлайн-магазина:</p>
+					<strong class="info__location">ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
 				</div>
-				<div class="info__contacts">
-					<p>Для заказов по телефону:</p>
-					<strong>8 812 450-25-25</strong>
-					<p>(с 10 до 20 ежедневно )</p>
+				<div class="info__contacts contacts">
+					<p class="info__text">Для заказов по телефону:</p>
+					<strong class="info__phone">8 812 450-25-25</strong>
+					<p class="info__text">(с 10 до 20 ежедневно )</p>
 				</div>
 				<button type="button">Форма обратной связи</button>
 			</section>
@@ -180,20 +178,21 @@
 				<a class="socials__link socials__link-vk" href="#">Вконтакте</a>
 			</div>
 			<div class="about-us">
-				<a href="#">Для поставщиков</a>
-				<a href="#">О производстве</a>
-				<a href="#">Наши документы</a>
-				<a href="#">Экологические стандарты</a>
+				<span class="about-us__icon">Сердце</span>
+				<a class="about-us__link-providers" href="#">Для поставщиков</a>
+				<a class="about-us__link" href="#">О производстве</a>
+				<a class="about-us__link" href="#">Наши документы</a>
+				<a class="about-us__link" href="#">Экологические стандарты</a>
 			</div>
 			<div class="copyright">
-				<img src="http://via.placeholder.com/108x39" width="108" height="39" alt="Логотип HTML Academy">
-				<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&#169; 2018</p>
+				<img class="copyright__academy-logo" src="http://via.placeholder.com/108x39" width="108" height="39" alt="Логотип HTML Academy">
+				<p class="copyright__text">Сделано в <a class="copyright__link" class="" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&#169; 2018</p>
 			</div>
 		</footer>
 		<section class="modal modal-enter">
 			<!-- Форма входа -->
-			<a href="#">Забыли пароль?</a>
-			<a href="#">Новая регистрация</a>
+			<a class="modal-enter__link" href="#">Забыли пароль?</a>
+			<a class="modal-enter__link" href="#">Новая регистрация</a>
 		</section>
 		<section class="modal modal-feedback">
 			<h2>Мы обязательно вам ответим!</h2>

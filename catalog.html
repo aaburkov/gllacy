@@ -7,35 +7,35 @@
 <body>
 	<header class="main-header">
 			<nav class="main-nav">
-				<a href="index.html" class="main-header__logo">
-					<img src="http://via.placeholder.com/154x64" alt="Логотип магазина мороженного Глэйси"
+				<a class="main-header__logo-link" href="index.html" >
+					<img class="main-header__image" src="http://via.placeholder.com/154x64" alt="Логотип магазина мороженного Глэйси"
 					width="154" height="64">
 				</a>
 				<ul class="main-nav__site-nav site-nav">
-					<li class="site-nav--current"><span>Каталог</span>
-						<ul class="site-nav__dropdown "><!-- Выпадающее окно каталога -->
+					<li class="site-nav--current"><span class="site-nav__catalog">Каталог</span>
+						<ul class="site-nav__dropdown dropdown"><!-- Выпадающее окно каталога -->
 							<li>
-								<a href="#">Новинки</a>
+								<a class="dropdown__link" href="#">Новинки</a>
 							</li>
 							<li>
-								<a href="#">Сливочное</a>
+								<a class="dropdown__link" href="#">Сливочное</a>
 							</li>
 							<li>
-								<a href="#">Щербеты</a>
+								<a class="dropdown__link" href="#">Щербеты</a>
 							</li>
 							<li>
-								<a href="#">Фруктовый лед</a>
+								<a class="dropdown__link" href="#">Фруктовый лед</a>
 							</li>
 							<li>
-								<a href="#">Мелорин</a>
+								<a class="dropdown__link" href="#">Мелорин</a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<a href="#"> Доставка и Оплата</a>
+						<a class="site-nav__link" href="#"> Доставка и Оплата</a>
 					</li>
 					<li>
-						<a href="#"> О Компании</a>
+						<a class="site-nav__link" href="#"> О Компании</a>
 					</li>
 				</ul>
 				<ul class="main-nav__user-nav user__nav">
@@ -46,21 +46,21 @@
 						Вход
 						<!--Выпадающее окно входа пользователя  -->
 					</li>
-					<li class="user-nav__cart">
-						2 товара
+					<li class="user-nav__cart cart">
+						<span class="cart__goods">2 товара</span> 
 					</li>
 				</ul>
 			</nav>
 			<div class="main-heder__info info">
-				<p>С 10 до 20, ежедневно</p>
+				<span class="info__working-hours">С 10 до 20, ежедневно</span>
 				<span class="info__phone">8 812 450-25-25</span>
 			</div>
 	</header>
 	<main>
 		<ul class="breadcrumbs">
-			<li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-			<li class="breadcrumbs__item"><a href="#">Каталог</a></li>
-			<li class="breadcrumbs__item--current"><a href="#">Сливочное</a></li>
+			<li><a class="breadcrumbs__item" href="index.html">Главная</a></li>
+			<li><a class="breadcrumbs__item" href="#">Каталог</a></li>
+			<li><a class="breadcrumbs__item breadcrumbs__item--current" href="#">Сливочное</a></li>
 		</ul>
 		<h1 class="page-title">Сливочное мороженое</h1>
 		<section class="">
@@ -69,123 +69,122 @@
 		</section>
 		<section class="catalog">
 				<article class="product">
-					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+					<img class="product__image" src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					<div class="product__info">
 						<strong class="product__price">310&#8381;</strong>
 						<span class="product__units">/Кг</span>
-						<h1 class="product__description">
-							<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+						<h1 class="product__name">
+							<a class="product__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 						</h1>
 					</div>
 				</article>
 				<article class="product">
-					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+					<img class="product__image" src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 					<div class="product__info">
-						<strong class="produsroduct__price">380&#8381;</strong>
+						<strong class="product__price">380&#8381;</strong>
 						<span class="product__units">/Кг</span>
-						<h1 class="product__description">
-							<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+						<h1 class="product__name">
+							<a class="product__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
 						</h1>
 					</div>
 				</article>
 				<article class="product">
-					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+					<img class="product__image" src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 					<div class="product__info">
-						<strong class="produsroduct__price">355&#8381;</strong>
+						<strong class="product__price">355&#8381;</strong>
 						<span class="product__units">/Кг</span>
-						<h1 class="product__description">
-							<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+						<h1 class="product__name">
+							<a class="product__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 						</h1>
 					</div>
 				</article>
 				<article class="product">
-					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+					<img class="product__image" src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 					<div class="product__info">
-						<strong class="produsroduct__price">415&#8381;</strong>
+						<strong class="product__price">415&#8381;</strong>
 						<span class="product__units">/Кг</span>
-						<h1 class="product__description">
-							<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+						<h1 class="product__name">
+							<a class="product__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 						</h1>
 					</div>
 				</article>
 				<article class="product">
-					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с брусничным джемом">
+					<img class="product__image" src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с брусничным джемом">
 					<div class="product__info">
 						<strong class="product__price">325&#8381;</strong>
 						<span class="product__units">/Кг</span>
-						<h1 class="product__description">
-							<a href="#">Сливочное с брусничным джемом</a>
+						<h1 class="product__name">
+							<a class="product__link" href="#">Сливочное с брусничным джемом</a>
 						</h1>
 					</div>
 				</article>
 				<article class="product">
-					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+					<img class="product__image" src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
 					<div class="product__info">
-						<strong class="produsroduct__price">410&#8381;</strong>
+						<strong class="product__price">410&#8381;</strong>
 						<span class="product__units">/Кг</span>
-						<h1 class="product__description">
-							<a href="#">Сливочно-черничное с цельными ягодами черники</a>
+						<h1 class="product__name">
+							<a class="product__link" href="#">Сливочно-черничное с цельными ягодами черники</a>
 						</h1>
 					</div>
 				</article>
 				<article class="product">
-					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+					<img class="product__image" src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
 					<div class="product__info">
-						<strong class="produsroduct__price">375&#8381;</strong>
+						<strong class="product__price">375&#8381;</strong>
 						<span class="product__units">/Кг</span>
-						<h1 class="product__description">
-							<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+						<h1 class="product__name">
+							<a class="product__link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
 						</h1>
 					</div>
 				</article>
 				<article class="product">
-					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+					<img class="product__image" src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с шоколадной стружкой">
 					<div class="product__info">
-						<strong class="produsroduct__price">320&#8381;</strong>
+						<strong class="product__price">320&#8381;</strong>
 						<span class="product__units">/Кг</span>
-						<h1 class="product__description">
-							<a href="#">Сливочное с шоколадной стружкой</a>
+						<h1 class="product__name">
+							<a class="product__link" href="#">Сливочное с шоколадной стружкой</a>
 						</h1>
 					</div>
 				</article>
-				<!--  -->
 				<article class="product">
-					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+					<img class="product__image" src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
 					<div class="product__info">
 						<strong class="product__price">440&#8381;</strong>
 						<span class="product__units">/Кг</span>
-						<h1 class="product__description">
-							<a href="#">Сливочно-ванильное с кусочками шоколада</a>
+						<h1 class="product__name">
+							<a class="product__link" href="#">Сливочно-ванильное с кусочками шоколада</a>
 						</h1>
 					</div>
 				</article>
 				<article class="product">
-					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
+					<img class="product__image" src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
 					<div class="product__info">
-						<strong class="produsroduct__price">435&#8381;</strong>
+						<strong class="product__price">435&#8381;</strong>
 						<span class="product__units">/Кг</span>
-						<h1 class="product__description">
-							<a href="#">Сливочноe с ментоловым сиропом</a>
+						<h1 class="product__name">
+							<a class="product__link" href="#">Сливочноe с ментоловым сиропом</a>
 						</h1>
 					</div>
 				</article>
 				<article class="product">
-					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+					<img class="product__image" src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
 					<div class="product__info">
-						<strong class="produsroduct__price">355&#8381;</strong>
+						<strong class="product__price">355&#8381;</strong>
 						<span class="product__units">/Кг</span>
-						<h1 class="product__description">
-							<a href="#">Сливочное с кусочками черного шоколада</a>
+						<h1 class="product__name">
+							<a class="product__link" href="#">Сливочное с кусочками черного шоколада</a>
 						</h1>
 					</div>
 				</article>
 				<article class="product">
-					<img src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с мятным сиропом">
+					<img class="product__image" src="http://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с мятным сиропом">
 					<div class="product__info">
-						<strong class="produsroduct__price">420&#8381;</strong>
+						<strong class="product__price">420&#8381;</strong>
 						<span class="product__units">/Кг</span>
-						<h1 class="product__description">
-							<a href="#">Сливочное с мятным сиропом</a>
+						<h1 class="product__name">
+							<a class="product__link" href="#">Сливочное с мятным сиропом</a>
 						</h1>
 					</div>
 				</article>
@@ -193,11 +192,21 @@
 			<div class="pagination">
 				<span class="pagination__control-prev">&lt;</span>
 				<ul class="pagination__list">
-					<li class="pagination__item pagination__item--current">1</li>
-					<li class="pagination__item">2</li>
-					<li class="pagination__item">3</li>
-					<li class="pagination__item">4</li>
-					<li class="pagination__item">5</li>
+					<li>
+						<a class="pagination__item pagination__item--current" href="#">1</a>
+					</li>
+					<li>
+						<a class="pagination__item" href="#">2</a>
+					</li>
+					<li>
+						<a class="pagination__item" href="#">3</a>
+					</li>
+					<li>
+						<a class="pagination__item" href="#">4</a>
+					</li>
+					<li>
+						<a class="pagination__item" href="#">5</a>
+					</li>
 				</ul>
 				<span class="pagination__control-next">&gt;</span>
 			</div>
@@ -211,28 +220,28 @@
 			</div>
 			<div class="about-us">
 				<span class="about-us__icon">Сердце</span>
-				<a href="#">Для поставщиков</a>
-				<a href="#">О производстве</a>
-				<a href="#">Наши документы</a>
-				<a href="#">Экологические стандарты</a>
+				<a class="about-us__link-providers" href="#">Для поставщиков</a>
+				<a class="about-us__link" href="#">О производстве</a>
+				<a class="about-us__link" href="#">Наши документы</a>
+				<a class="about-us__link" href="#">Экологические стандарты</a>
 			</div>
 			<div class="copyright">
-				<img src="http://via.placeholder.com/108x39" width="108" height="39" alt="Логотип HTML Academy">
-				<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&#169; 2018</p>
+				<img class="copyright__academy-logo" src="http://via.placeholder.com/108x39" width="108" height="39" alt="Логотип HTML Academy">
+				<p class="copyright__text">Сделано в <a class="copyright__link" class="" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&#169; 2018</p>
 			</div>
 		</footer>
 		<section class="modal modal-cart">
 			<table class="modal-cart__table">
 				<tr>
-					<td><span class="modal-cart__item__delete">X</span></td>
-					<td><img src="http://via.placeholder.com/33x33" alt="Пломбир с апельсиновым джемом"></td>
+					<td><span class="modal-cart__item-delete">X</span></td>
+					<td><img class="modal-cart__product-image" src="http://via.placeholder.com/33x33" alt="Пломбир с апельсиновым джемом"></td>
 					<td>Пломбир с апельсиновым джемом</td>
 					<td>1,5кг x <span>200 руб.</span></td>
 					<td>300 руб.</td>
 				</tr>
 				<tr>
 					<td><span class="modal-cart__delete">X</span></td>
-					<td><img src="http://via.placeholder.com/33x33" alt="Клубничный пломбир с присыпкой из белого шspanколада"></td>
+					<td><img class="modal-cart__product-image"<a href="#"> </src="http://via.placeholder.com/33x33" alt="Клубничный пломбир с присыпкой из белого шspanколада"></td>
 					<td>Клубничный пломбир с присыпкой из белого шоколада</td>
 					<td>1,5кг x <span>300 руб.</span></td>
 					<td>450 руб.</td>
