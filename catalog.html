@@ -55,7 +55,7 @@
 					<!--Выпадающее окно входа пользователя  -->
 				</li>
 				<li class="user-nav__cart cart">
-					<a href="#" class="cart__button">Пусто</a>
+					<a href="#" class="cart__button">2 товара</a>
 				</li>
 			</ul>
 			<div class="main-heder__info info">
@@ -63,18 +63,18 @@
 				<span class="info__phone">8 812 450-25-25</span>
 			</div>
 		</header>
-	<main>
+	<main class="catalog-page">
 		<ul class="breadcrumbs">
 			<li><a class="breadcrumbs__item" href="index.html">Главная</a></li>
 			<li><a class="breadcrumbs__item" href="#">Каталог</a></li>
 			<li><a class="breadcrumbs__item breadcrumbs__item--current" href="#">Сливочное</a></li>
 		</ul>
-		<h1 class="page-title">Сливочное мороженое</h1>
+		<h1 class="catalog-page__title">Сливочное мороженое</h1>
 		<section class="filter">
 			<h2 class="visually-hidden">Форма поиска</h2>
 			<form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
 				<fieldset class="filter__box">
-					<label for="sorting">
+					<label class="filter-label" for="sorting">
 					Сортировка
 					</label>
 					<select class="filter__sorting sorting" id="sorting" name="sorting">
@@ -92,51 +92,51 @@
 						</option>
 					</select>
 					<div class="range">
-						 <p class="range__interval">Цена: <span class="range__value-1">100</span> руб. - <span class="range__value-2">500</span> руб.</p>
+						 <p class="filter-label">Цена: <span class="range__value-1">100</span> руб. - <span class="range__value-2">500</span> руб.</p>
 					</div>
 					<fieldset class="fatinnes">
-						<legend class="fatinnes__title">Жирность</legend>
-					<label>
+						<legend class="filter-label">Жирность</legend>
+					<label class="fatinnes__label">
 						<input class="fatinnes__item" name="fatinnes__group" value="1" type="radio">
 						0%
 					</label>
-					<label>
+					<label class="fatinnes__label">
 						<input class="fatinnes__item" name="fatinnes__group" value="2" type="radio" checked>
 						до 10%
 					</label>
-					<label>
+					<label class="fatinnes__label">
 						<input class="fatinnes__item" name="fatinnes__group" value="3" type="radio">
 						до 30%
 					</label>
-					<label>
+					<label class="fatinnes__label">
 						<input class="fatinnes__item" name="fatinnes__group" value="4" type="radio">
 						выше 30%
 					</label>
 					</fieldset>				
 					<fieldset class="toping" >
-						<legend class="toping__title">Наполнители</legend>
-						<label class="toping__name">
+						<legend class="filter-label">Наполнители</legend>
+						<label class="toping__label">
 							<input type="checkbox" name="toping__group" value="1" checked>
 							Шоколадные
 						</label>
-						<label class="toping__name">
+						<label class="toping__label">
 							<input type="checkbox" name="toping__group" value="2" checked>
 							Сахарные присыпки
 						</label>
-						<label class="toping__name">
+						<label class="toping__label">
 							<input type="checkbox" name="toping__group" value="3">
 							Фрукты
 						</label>
-						<label class="toping__name">
+						<label class="toping__label">
 							<input type="checkbox" name="toping__group" value="4">
 							Сиропы
 						</label>
-						<label class="toping__name">
+						<label class="toping__label">
 							<input type="checkbox" name="toping__group" value="5">
 							Джемы
 						</label>
 					</fieldset>
-					<button class="form-button" type="submit">Применить</button>
+					<button class="filter__button" type="submit">Применить</button>
 				</fieldset>
 			</form>
 		</section>
@@ -325,14 +325,14 @@
 					<td><button type="button" class="modal-cart__item-delete">Удалить товар</button></td>
 					<td><img class="modal-cart__product-image" src="img/product-img-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
 					<td>Пломбир с апельсиновым джемом</td>
-					<td>1,5кг x <span>200 руб.</span></td>
+					<td>1,5кг x <span class="modal-cart__item-price">200 руб.</span></td>
 					<td>300 руб.</td>
 				</tr>
 				<tr>
 					<td><button type="button" class="modal-cart__delete">Удалить товар</button></td>
 					<td><img class="modal-cart__product-image" src="img/product-img-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
 					<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-					<td>1,5кг x <span>300 руб.</span></td>
+					<td>1,5кг x <span class="modal-cart__item-price">300 руб.</span></td>
 					<td>450 руб.</td>
 				</tr>
 			</table>
