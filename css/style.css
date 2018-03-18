@@ -429,19 +429,32 @@ body{
 
 .subscribe{
 	width: 560px;
-	min-height: 220px;
+	height: 220px;
+	padding: 5px 6px;
 	background-image: url(../img/subscribe-bg.svg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
 
+.subscribe__wrapper{
+	width: 506px;
+	height: 144px;
+	padding: 33px 21px;
+	border-radius: 10px;
+	background-color: #f8f7f4;
+}
+
 .subscribe__input{
+	box-sizing: border-box;
 	width: 368px;
 	height: 44px;
 	padding-left: 10px;
 	border: 1px solid #b2b2b2;
 	border-radius: 5px;
 }
+
+.subscribe__form{
+	}
 
 .subscribe__input:hover,
 .subscribe__input:focus{
@@ -453,6 +466,7 @@ body{
 }
 
 .subscribe__button{
+	margin-left: 4px;
 	border: none;
 	width: 130px;
 	height: 45px;
