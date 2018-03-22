@@ -101,6 +101,7 @@
 								<svg class="cart-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 								 width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
 							<g>
+								<polygon fill="transparent" points="5.888,4.031 6.922,13 17.372,13 18.548,4.031 "/>
 								<path fill="#FFFFFF" d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
 									L17.372,13z"/>
 								<circle fill="#FFFFFF" cx="6.984" cy="18" r="2"/>
@@ -160,7 +161,7 @@
 	  			    	</div>
 	  			    </section>
 	  					<section class="catalog">
-	  						<article class="product">
+	  						<article class="product product--hit">
 	  							<img class="product__image" src="img/product-img-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 	  							<div class="product__info">
 	  								<strong class="product__price">310&#8381;</strong>
@@ -168,9 +169,9 @@
 	  							</div>
 	  								<h1 class="product__name">
 	  									<a class="product__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-	  								</h1>	  							
+	  								</h1>
 	  						</article>
-	  						<article class="product">
+	  						<article class="product product--hit">
 	  							<img class="product__image" src="img/product-img-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 	  							<div class="product__info">
 	  								<strong class="product__price">380&#8381;</strong>
@@ -180,7 +181,7 @@
 	  									<a class="product__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
 	  								</h1>
 	  						</article>
-	  						<article class="product">
+	  						<article class="product product--hit">
 	  							<img class="product__image" src="img/product-img-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 	  							<div class="product__info">
 	  								<strong class="product__price">355&#8381;</strong>
@@ -190,7 +191,7 @@
 	  									<a class="product__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 	  								</h1>
 	  						</article>
-	  						<article class="product">
+	  						<article class="product product--hit">
 	  							<img class="product__image" src="img/product-img-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 	  							<div class="product__info">
 	  								<strong class="product__price">415&#8381;</strong>
@@ -239,19 +240,22 @@
 	  					</div>
 	  	</div>
 	    <section class="map">
+	    	<div class="container">
+	    		<section class="info-and-feedback">
+						<div class="info-and-feedback__adress">
+							<p class="info-and-feedback__text">Адресс главного офиса и офлайн-магазина:</p>
+							<strong class="info-and-feedback__location">ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
+						</div>
+						<div class="info-and-feedback__contacts contacts">
+							<p class="info-and-feedback__text">Для заказов по телефону:</p>
+							<strong class="info-and-feedback__phone">8 812 450-25-25</strong>
+							<p class="info-and-feedback__work-time">(с 10 до 20 ежедневно )</p>
+						</div>
+						<button class="btn feedback-button" type="button">Форма обратной связи</button>
+					</section>
+	    	</div>
 				<img class="map__image" src="img/map-img.jpg" width="1200" height="430" alt="Карта. Как проехать?">
-				<section class="info-and-feedback">
-					<div class="info-and-feedback__adress">
-						<p class="info-and-feedback__text">Адресс главного офиса и офлайн-магазина:</p>
-						<strong class="info-and-feedback__location">ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
-					</div>
-					<div class="info-and-feedback__contacts contacts">
-						<p class="info-and-feedback__text">Для заказов по телефону:</p>
-						<strong class="info-and-feedback__phone">8 812 450-25-25</strong>
-						<p class="info-and-feedback__work-time">(с 10 до 20 ежедневно )</p>
-					</div>
-					<button class="btn feedback-button" type="button">Форма обратной связи</button>
-				</section>
+				
 			</section>	
 	  </main>
 		<footer class="main-footer">
@@ -318,8 +322,8 @@
 					</div>
 					<div class="about-us">
 						<a class="about-us__link" href="#">Для поставщиков</a>
-						<a class="about-us__link" href="#">О производстве</a>
 						<a class="about-us__link" href="#">Наши документы</a>
+						<a class="about-us__link" href="#">О производстве</a>
 						<a class="about-us__link" href="#">Экологические стандарты</a>
 					</div>
 					<div class="copyright">
