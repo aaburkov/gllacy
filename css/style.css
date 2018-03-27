@@ -22,6 +22,18 @@ body{
 	color: #ffffff;
 }
 
+.slider1-bg{
+	background-color: #849d8f;
+}
+
+.slider2-bg{
+	background-color: #8996a6;
+}
+
+.slider3-bg{
+	background-color: #9d8b84;
+}
+
 .container{
 	/* outline: 2px solid purple;  */
 	position: relative;
@@ -100,9 +112,7 @@ body{
 .site-nav__sub-menu{
 	display: inline-block;
 	box-sizing: border-box;
-	padding-top: 8px;
-	width: 87px;
-	height: 32px;
+	padding: 8px 14px;
 	text-align: center;
 	}
 
@@ -124,8 +134,6 @@ body{
 .site-nav--current{
 	display: inline-block;
 	box-sizing: border-box;
-	width: 87px;
-	height: 32px;
 	text-align: center;
 	text-decoration: none;
 	background-color: #d07058;
@@ -246,11 +254,10 @@ body{
 	display: inline-block;
 	box-sizing: border-box;	
 	position: relative;
-	width: 92px;
 	height: 33px;
 	padding-top: 8px;
   padding-left: 45px;
-	
+	padding-right: 15px;
 
 	border-radius: 20px;
 	background-color: rgba(255, 255, 255, 0.2);
@@ -286,11 +293,10 @@ body{
 	display: inline-block;
 	box-sizing: border-box;	
 	position: relative;
-	width: 117px;
 	height: 33px;
 	padding-top: 8px;
 	padding-left: 45px;
-
+	padding-right: 35px;
 	border-radius: 20px;
 	background-color: rgba(255, 255, 255, 0.2);
 
@@ -388,9 +394,10 @@ body{
 }
 
 .page-slider__item{
+	display: none;
 	position: relative;	
 	padding-top: 297px;
-  margin-bottom: 39px;
+  margin-bottom: 42px;
 }
 
 .page-slider__product-name{
@@ -400,11 +407,13 @@ body{
     text-align: center; 
     margin: 0;
     margin-left: 233px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     font-weight: bold;
 }
 
 .page-slider__btn{
+	width: 280px;
+	padding: 9px 41px;
 	margin-left: 433px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.76);
 }
@@ -413,15 +422,14 @@ body{
 	width: 90px;
 	position: absolute;
 	left: 0;
-  bottom: 24px;
+  bottom: 20px;
 }
 
 .page-slider__button{
 	width: 21px;
 	height: 21px;
 	margin-right: 4px;
-	font-size: 0;
-	border: 2px solid #fff;
+	border: 2px solid #ffffff;
 	background-color: transparent;
 	border-radius: 50%;
 	cursor: pointer;
@@ -438,11 +446,6 @@ body{
 
 .page-slider__button--active:hover{
 	background-color: #fff;
-}
-
-.page-slider__item:nth-of-type(2),
-.page-slider__item:nth-of-type(3){
-	display: none;
 }
 
 /* Основное содержание */
@@ -479,12 +482,12 @@ body{
 
 .breadcrumbs__item:not(:last-child)::after{
 	content: "»";
-	margin-right: 5px;
+	margin-right: 6px;
 }
 
 .catalog-page__title{
 	margin: 0;
-	margin-bottom: 22px;
+	margin-bottom: 24px;
 	font-size: 35px;
 	line-height: 41px;
 	font-weight: bold;
@@ -502,7 +505,7 @@ body{
 	display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 	font-weight: 500;
 }
 
@@ -571,11 +574,50 @@ body{
 	margin-bottom: 5px;
 }
 
-.range__block{
+.range__controls{
+	position: relative;
+	box-sizing: border-box;
+  padding-top: 18px;
+  padding-left: 21px;
 	width: 218px;
 	height: 36px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
+}
+
+.range__scale{
+	width: 90%;
+	height: 4px;
+	box-sizing: border-box;
+  padding-left: 11%;
+	background-color: #d1dad3;
+}
+
+.range__bar{
+	width: 65%;
+	height: 4px;
+	background-color: #f8f7f4;
+}
+
+.range__toggle{
+	position: absolute;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	box-sizing: border-box;
+	background-color: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+}
+
+.range__toggle-min{
+  top: 10px;
+  left: 35px;
+}
+
+.range__toggle-max{
+	top: 10px;
+  right: 65px;
 }
 
 .fatinnes{
@@ -680,7 +722,7 @@ body{
 	display: block;
 	position: absolute;
 	left: -32px;
-  top: 0;
+  top: 3px;
   box-sizing: border-box;
 	width: 20px;
 	height: 20px;
@@ -746,8 +788,7 @@ body{
 
 .filter__button{
 	box-sizing: border-box;
-	width: 143px;
-	min-height: 36px;
+	padding: 6px 26px;
 	margin-bottom: 15px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 15px/20px;
@@ -778,20 +819,18 @@ body{
 .btn{
 	cursor: pointer;
 	display: inline-block;
+	vertical-align: top;
 	box-sizing: border-box;
-	height: 63px;
-	width: 280px;
-	padding: 7px 0;
-	text-align: center;
 	text-decoration: none;
 	font-size: 32px;
 	line-height: 44px;
 	font-weight: bold;
-	color: #fff;
+	color: #ffffff;
 	box-shadow: 0 2px 2px 0 rgba(153, 0, 0, 0.64);
 	background: linear-gradient(to top, #db4c38, #f36a3f);
 	border-radius: 30px;
 }
+
 
 .btn:hover{
 	background: linear-gradient(to top, #ec6f5e, #f58669);
@@ -817,12 +856,13 @@ body{
 	box-sizing: border-box;
 	justify-content: space-between;
 	padding-top: 16px;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   padding-right: 21px;
   padding-left: 18px;
 	width: 48.9%;
 	border-radius: 10px;
 	min-height: 229px;
+	background-size: cover; 
 }
 
 .offer__choclade{
@@ -846,22 +886,16 @@ body{
 .offer__description{
 	display: inline-block;
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 29px;
 	font-size: 18px;
 	font-weight: bold;
 }
 
 .offer__btn{
   align-self: flex-end;
-	padding: 11px 23px;
-	height: 46px;
-	width: auto;
+	padding: 13px 22px;
 	font-size: 18px;
 	line-height: 24px;
-}
-
-.offer__btn-chocolade{
-	padding: 10px 21px;
 }
 
 .catalog{
@@ -898,11 +932,10 @@ body{
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  height: 44px;
-  width: 200px;
-  padding: 9px;
+  padding: 9px 10px;
   margin-left: 35px;
   margin-bottom: 20px;
+  border-radius: 15px/25px;
 }
 
 .product--hit{
@@ -912,6 +945,7 @@ body{
 .product--hit::before{
 	content: "";
 	position: absolute;
+	z-index: 1;
 	width: 61px;
 	height: 61px;
 	border-radius: 50%;
@@ -921,11 +955,15 @@ body{
 	background-color: #ffffff;
 }
 
+.product__preview{
+	position: relative;
+}
+
 .product__info{
 	display: flex;
 	align-items: baseline;
 	position: absolute;
-	bottom: 81px;
+	bottom: 20px;
 	left: 0;
 	text-shadow: 1px 1px 2px rgba(49, 50, 53, 0.5);
 }
@@ -1083,6 +1121,7 @@ body{
 }
 
 .blog-preview__title{
+	width: 55%;
 	margin: 0;
 	margin-bottom: 5px;
 	font: inherit;
@@ -1103,7 +1142,6 @@ body{
 .subscribe{
 	box-sizing: border-box;
 	width: 48.8%;
-	height: 220px;
 	padding: 5px 6px;
 	background-image: url(../img/subscribe-bg.svg);
 	background-repeat: no-repeat;
@@ -1124,6 +1162,7 @@ body{
 	box-sizing: border-box;
 	width: 368px;
 	height: 44px;
+	margin-right: 10px;
 	padding-left: 15px;
 	border: none;
 	box-shadow: inset 0 0 0 1px rgba(178, 178, 178, 0.52);
@@ -1208,10 +1247,6 @@ body{
 	width: 70%;
 }
 
-.info-and-feedback__contacts{
-	
-}
-
 .info-and-feedback__location{
 	margin-bottom: 19px;
   display: inline-block;
@@ -1235,7 +1270,7 @@ body{
 
 .feedback-button{
 	width: 251px;
-	height: 43px;
+	padding: 10px;
 	border: none;
 	font-size: 18px;
 	line-height: 24px;
@@ -1251,7 +1286,7 @@ body{
 
 .pagination__list{
 	position: relative;
-	width: 12.2%;
+	min-width: 12.2%;
 	justify-content: space-between;
   display: flex;
 	padding: 0;
@@ -1568,8 +1603,7 @@ body{
 }
 
 .modal-enter__button{
-	width: 100px;
-	height: 44px;
+	padding: 0 30px;
 	font-size: 18px;
 	line-height: 24px;
 	border: none;
@@ -1590,7 +1624,8 @@ body{
 }
 
 .modal-feedback__form{
-	position: relative;
+	display: flex;
+  flex-direction: column;
 }
 
 .modal-feedback__email,
@@ -1626,7 +1661,7 @@ body{
 
 .modal-feedback__email:hover,
 .modal-feedback__user-name:hover,
-.modal-feedback__text:hover,{
+.modal-feedback__text:hover{
 	box-shadow: inset 0 0 0 2px rgba(154, 154, 154, 0.52);
 }
 
@@ -1655,10 +1690,8 @@ body{
 }
 
 .modal-feedback__button{
-	position: relative;
-	right: -290px; 
-	width: 138px;
-	height: 43px;
+	padding: 11px 25px;
+	align-self: flex-end;
 	font-size: 18px;
 	line-height: 24px;
 	border: none;
@@ -1667,8 +1700,8 @@ body{
 .modal__close{
 	cursor: pointer;
 	position: absolute;
-  top: -54px;
-  right: -10px;
+  top: 13px;
+  right: 14px;
 	width: 18px;
 	height: 18px;
 	border: none;
@@ -1769,4 +1802,57 @@ body{
 	top: 31px;
   right: 0;
 	z-index: 10;
+}
+
+.slide-show{
+	display: block;
+}
+
+.modal-show{
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-error{
+	animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
