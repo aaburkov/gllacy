@@ -97,27 +97,20 @@ slideControl3.addEventListener("click", function(evt) {
 	slideControl2.classList.remove("page-slider__button--active");
 	slideControl1.classList.remove("page-slider__button--active");
 })
-console.log(slideControl1);
-console.log(slideControl2);
-console.log(slideControl3);
-console.log(slide1);
-console.log(slide2);
-console.log(slide3);
 
-
-/*function initialize() {
-  var mapOptions = {
-    zoom: 15,
-    center: new google.maps.LatLng(59.9992618,30.3648466)
-  }
-  var map = new google.maps.Map(document.getElementById('map-canvas'),
-                                mapOptions);
-  var image = "http://i.neoseeker.com/mgv/499846/846/33/15847_179440563793_179437393793_2772323_4548598_n_icon.jpg";
-  var myLatLng = new google.maps.LatLng(59.999,30.364);
-  var beachMarker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    icon: image
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: {lat: 59.939202 , lng: 30.327438}
   });
+
+	var marker = new google.maps.Marker({
+		position: {lat: 59.938863, lng: 30.323214},
+		map: map,
+		icon:{
+            url: 'C:/Users/gamaz/Desktop/gllacy/img/pin-icon-2.png',
+            size: new google.maps.Size(218, 142),
+            anchor: new google.maps.Point(48, 122)
+          }
+	});
 }
-google.maps.event.addDomListener(window, 'load', initialize);*/
