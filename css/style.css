@@ -51,7 +51,6 @@ body
 
 .container
 {
-    /* outline: 2px solid purple;  */
     position: relative;
 
     -webkit-box-sizing: border-box;
@@ -170,6 +169,7 @@ body
     padding: 8px 14px;
 
     text-align: center;
+    vertical-align: top;
 }
 
 .site-nav__sub-menu:hover
@@ -200,6 +200,7 @@ body
             box-sizing: border-box;
 
     text-align: center;
+    vertical-align: top;
     text-decoration: none;
 
     border-radius: 20px;
@@ -364,6 +365,7 @@ body
     padding-right: 15px;
     padding-left: 45px;
 
+    vertical-align: top;
     text-decoration: none;
 
     color: #fff;
@@ -412,7 +414,7 @@ body
     padding-right: 35px;
     padding-left: 45px;
 
-    vertical-align: middle;
+    vertical-align: top;
     text-decoration: none;
 
     color: #fff;
@@ -498,6 +500,8 @@ body
     display: inline-block;
 
     margin-top: 2px;
+
+    vertical-align: top;
 }
 
 /* Слайдер */
@@ -562,7 +566,6 @@ body
 
 .page-slider__btn
 {
-    width: 280px;
     padding: 9px 41px;
 
     text-shadow: 0 2px 5px rgba(0, 0, 0, .76);
@@ -730,7 +733,7 @@ body
 .toping
 {
     margin-right: 15px;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
 }
 
 .sorting
@@ -755,7 +758,15 @@ body
     background-repeat: no-repeat;
     background-position: 169px 13px;
 
+        -ms-appearance: none;
+            appearance: none;
+       -moz-appearance: none;
     -webkit-appearance: none;
+}
+
+.sorting::-ms-expand
+{
+    display: none;
 }
 
 .sorting__label
@@ -764,6 +775,8 @@ body
 
     margin-bottom: 5px;
     margin-left: 15px;
+
+    vertical-align: top;
 }
 
 .sorting-item
@@ -787,6 +800,8 @@ body
     margin: 0;
     margin-bottom: 5px;
     margin-left: 15px;
+
+    vertical-align: top;
 }
 
 .range__controls
@@ -863,6 +878,8 @@ body
     margin-bottom: 5px;
     margin-left: 15px;
     padding-top: 4px;
+
+    vertical-align: top;
 }
 
 .fatinnes-wrapper
@@ -901,6 +918,8 @@ body
     width: 16px;
     height: 16px;
     margin-right: 8px;
+
+    vertical-align: top;
 
     border: 3px solid #e6ebe9;
     border-radius: 50%;
@@ -962,6 +981,8 @@ body
     margin-bottom: 5px;
     margin-left: 15px;
     padding-top: 4px;
+
+    vertical-align: top;
 }
 
 .toping-wrapper
@@ -1118,10 +1139,6 @@ body
 
 /* Стили каталога 2 страницы*/
 
-/* .product:hover{
-	background-color: rgba(255, 255, 255, 0.2);
-} */
-
 .btn
 {
     font-size: 32px;
@@ -1134,6 +1151,7 @@ body
             box-sizing: border-box;
 
     cursor: pointer;
+    vertical-align: top;
     vertical-align: top;
     text-decoration: none;
 
@@ -1243,6 +1261,8 @@ body
 
     margin: 0;
     margin-bottom: 29px;
+
+    vertical-align: top;
 }
 
 .offer__btn
@@ -1346,9 +1366,6 @@ body
     font-weight: bold;
     line-height: 24px;
 
-    position: absolute;
-
-    margin-bottom: 20px;
     padding: 9px 10px;
 
     border-radius: 15px/25px;
@@ -1517,7 +1534,7 @@ body
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 48.7%;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
     padding-left: 54px;
 
     letter-spacing: .1px;
@@ -1612,7 +1629,7 @@ body
     width: 48.8%;
     min-height: 220px;
     padding: 20px;
-    padding-top: 25px;
+    padding-top: 23px;
 
     border-radius: 10px;
     background-image: url(../img/blog-anounce-bg.png);
@@ -1627,7 +1644,7 @@ body
 
     width: 55%;
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 
     color: #000;
 }
@@ -1822,6 +1839,8 @@ body
 
     width: 90%;
     margin-bottom: 19px;
+
+    vertical-align: top;
 }
 
 .info-and-feedback__phone
@@ -1831,8 +1850,7 @@ body
 
     display: inline-block;
 
-    margin-bottom: 3px;
-
+    vertical-align: top;
     vertical-align: top;
 }
 
@@ -1842,7 +1860,7 @@ body
     line-height: 22px;
 
     margin: 0;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
 }
 
 .feedback-button
@@ -1851,7 +1869,7 @@ body
     line-height: 24px;
 
     width: 251px;
-    padding: 10px;
+    padding: 11px 27px;
 
     border: none;
 }
@@ -2025,6 +2043,8 @@ body
     width: 32px;
     height: 32px;
     margin-right: 9px;
+
+    vertical-align: top;
 
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 50%;
@@ -2649,6 +2669,8 @@ body
     display: inline-block;
 
     margin-bottom: 15px;
+
+    vertical-align: top;
 }
 
 .cart__wrapper
@@ -2803,4 +2825,3 @@ body
         -webkit-transform: translateX(10px);
                 transform: translateX(10px);
     }
-}
