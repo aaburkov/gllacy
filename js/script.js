@@ -5,6 +5,7 @@ var form = popup.querySelector(".modal-feedback__form")
 var userName = popup.querySelector(".modal-feedback__user-name");
 var mail = popup.querySelector(".modal-feedback__email");
 var message = popup.querySelector(".modal-feedback__text");
+var overlay = document.querySelector(".overlay");
 var isStorageSupport = true;
 var storage = "";
 
@@ -17,6 +18,7 @@ try {
 feedback.addEventListener("click", function(evt) {
 	evt.preventDefault();
 	popup.classList.add("modal-show");
+	overlay.classList.add("display");
 
 	if (storage) {
 		userName.value = storage;
@@ -29,6 +31,7 @@ feedback.addEventListener("click", function(evt) {
 close.addEventListener("click", function(evt) {
 	evt.preventDefault();
 	popup.classList.remove("modal-show");
+	overlay.classList.remove("display")
 	popup.classList.remove("modal-error");
 });
 
@@ -108,7 +111,7 @@ function initMap() {
 		position: {lat: 59.938863, lng: 30.323214},
 		map: map,
 		icon:{
-            url: 'C:/Users/gamaz/Desktop/gllacy/img/pin-icon-2.png',
+            url: '/img/pin-icon-2.png',
             size: new google.maps.Size(218, 142),
             anchor: new google.maps.Point(48, 122)
           }
