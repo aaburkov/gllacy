@@ -667,7 +667,7 @@ body
     line-height: 41px;
 
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 25px;
 }
 
 /*Стили формы фильтра*/
@@ -687,7 +687,7 @@ body
     display: -ms-flexbox;
     display: flex;
 
-    margin-bottom: 24px;
+    margin-bottom: 27px;
 
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -733,7 +733,7 @@ body
 .toping
 {
     margin-right: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .sorting
@@ -978,8 +978,8 @@ body
 {
     display: inline-block;
 
-    margin-bottom: 5px;
-    margin-left: 15px;
+    margin-bottom: 8px;
+    margin-left: 13px;
     padding-top: 4px;
 
     vertical-align: top;
